@@ -2,14 +2,14 @@ from pathlib import Path
 
 def get_config():
     return {
-        "batch_size": 8,
-        "num_epochs": 20,
+        "batch_size": 64,
+        "num_epochs": 10,
         "lr": 10**-4,
-        "seq_len": 350,
+        "seq_len": 80,
         "d_model": 512,
-        "datasource": 'opus_books',
-        "lang_src": "en",
-        "lang_tgt": "it",
+        "datasource": 'harouzie/vi_en-translation',
+        "lang_src": "English",
+        "lang_tgt": "Vietnamese",
         "model_folder": "weights",
         "model_basename": "tmodel_",
         "preload": "latest",
